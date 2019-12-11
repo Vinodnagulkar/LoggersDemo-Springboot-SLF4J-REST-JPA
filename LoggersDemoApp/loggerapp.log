@@ -1,0 +1,74 @@
+18:05:31.514 [restartedMain] INFO  com.loggers.main.MainApplication - Starting MainApplication on YP1010121DT with PID 8992 (C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp)
+18:05:31.518 [restartedMain] DEBUG com.loggers.main.MainApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+18:05:31.518 [restartedMain] INFO  com.loggers.main.MainApplication - No active profile set, falling back to default profiles: default
+18:05:33.422 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:05:33.438 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:05:33.438 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:05:33.756 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:05:33.955 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:05:34.044 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+18:05:34.230 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:05:34.477 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:05:34.710 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:05:34.726 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:05:35.007 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:05:35.573 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:05:35.632 [restartedMain] INFO  com.loggers.main.MainApplication - Started MainApplication in 4.595 seconds (JVM running for 6.159)
+18:05:35.634 [restartedMain] INFO  com.loggers.main.MainApplication - Your application is started!
+18:05:42.851 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:34:57.027 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:34:57.039 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:34:57.412 [restartedMain] INFO  com.loggers.main.MainApplication - Starting MainApplication on YP1010121DT with PID 8992 (C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp)
+18:34:57.412 [restartedMain] DEBUG com.loggers.main.MainApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+18:34:57.412 [restartedMain] INFO  com.loggers.main.MainApplication - No active profile set, falling back to default profiles: default
+18:34:57.921 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+18:34:58.314 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:34:58.314 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:34:58.314 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:34:58.551 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:34:58.610 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:34:58.617 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+18:34:58.624 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+18:34:58.624 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:34:58.651 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:34:58.943 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:34:58.951 [restartedMain] INFO  com.loggers.main.MainApplication - Started MainApplication in 1.604 seconds (JVM running for 1769.479)
+18:34:58.953 [restartedMain] INFO  com.loggers.main.MainApplication - Your application is started!
+18:35:27.276 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+18:35:27.302 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+18:35:27.659 [restartedMain] INFO  com.loggers.main.MainApplication - Starting MainApplication on YP1010121DT with PID 8992 (C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp)
+18:35:27.660 [restartedMain] DEBUG com.loggers.main.MainApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+18:35:27.660 [restartedMain] INFO  com.loggers.main.MainApplication - No active profile set, falling back to default profiles: default
+18:35:28.083 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+18:35:28.509 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:35:28.510 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:35:28.510 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:35:28.723 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:35:28.778 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:35:28.785 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+18:35:28.792 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+18:35:28.792 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:35:28.814 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:35:29.053 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:35:29.059 [restartedMain] INFO  com.loggers.main.MainApplication - Started MainApplication in 1.475 seconds (JVM running for 1799.586)
+18:35:29.061 [restartedMain] INFO  com.loggers.main.MainApplication - Your application is started!
+18:36:15.826 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+18:36:15.847 [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+18:36:16.179 [restartedMain] INFO  com.loggers.main.MainApplication - Starting MainApplication on YP1010121DT with PID 8992 (C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp\target\classes started by vinod.nagulkar in C:\Users\vinod.nagulkar\Documents\workspace-sts-3.9.9.RELEASE\LoggersDemoApp)
+18:36:16.180 [restartedMain] DEBUG com.loggers.main.MainApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+18:36:16.180 [restartedMain] INFO  com.loggers.main.MainApplication - No active profile set, falling back to default profiles: default
+18:36:16.613 [restartedMain] WARN  o.a.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+18:36:17.014 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:36:17.014 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:36:17.014 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+18:36:17.230 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:36:17.281 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:36:17.287 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+18:36:17.294 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+18:36:17.294 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:36:17.314 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:36:17.537 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:36:17.543 [restartedMain] INFO  com.loggers.main.MainApplication - Started MainApplication in 1.411 seconds (JVM running for 1848.07)
+18:36:17.544 [restartedMain] INFO  com.loggers.main.MainApplication - Your application is started!
+18:37:05.961 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+18:37:05.987 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
