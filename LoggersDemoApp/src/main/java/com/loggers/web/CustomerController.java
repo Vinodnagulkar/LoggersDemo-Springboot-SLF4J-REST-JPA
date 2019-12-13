@@ -10,12 +10,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.loggers.exceptions.USERNOTFOUNDEXCEPTION;
 import com.loggers.model.Customer;
 import com.loggers.service.CustomerService;
 
 /**
  * @author vinod.nagulkar
- *
  */
 @RestController
 public class CustomerController 
@@ -30,12 +31,12 @@ public class CustomerController
 	@PostMapping("api/customer/registerCustomer")
 	void registerCustomer(@RequestBody Customer customer) 
 	{
-		LOGGER.info("Customer is created....");
 		customerService.registerCustomer(customer);
+		LOGGER.info("Customer is created....");
 	}
 	
 	@PostMapping("api/customer/loginCustomer")
-	Customer loginCustomer(@RequestBody Customer customer) {
+	Customer loginCustomer(@RequestBody Customer customer) throws USERNOTFOUNDEXCEPTION {
 		
 		LOGGER.info("Inside Customer Login API");
 		return customerService.loginCustomer(customer);
