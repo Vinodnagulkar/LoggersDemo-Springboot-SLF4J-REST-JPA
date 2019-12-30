@@ -5,6 +5,8 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.loggers.exceptions.USERNOTFOUNDEXCEPTION;
 import com.loggers.model.Customer;
 import com.loggers.service.CustomerService;
+import com.loggers.util.LoggersURI;
 
 /**
  * @author vinod.nagulkar
@@ -28,33 +31,47 @@ public class CustomerController
 	CustomerService customerService;
 	
 	
-	@PostMapping("api/customer/registerCustomer")
-	void registerCustomer(@RequestBody Customer customer) 
+	@PostMapping(LoggersURI.REGISTER_CUSTOMER)
+	ResponseEntity<?> registerCustomer(@RequestBody Customer customer) 
 	{
 		customerService.registerCustomer(customer);
 		LOGGER.info("Customer is created....");
+		return new ResponseEntity<Customer>(HttpStatus.CREATED);
+		
 	}
 	
-	@PostMapping("api/customer/loginCustomer")
-	Customer loginCustomer(@RequestBody Customer customer) throws USERNOTFOUNDEXCEPTION {
+	@PostMapping(LoggersURI.LOGIN_CUSTOMER)
+	ResponseEntity<Customer> loginCustomer(@RequestBody Customer customer) throws USERNOTFOUNDEXCEPTION {
 		
 		LOGGER.info("Inside Customer Login API");
-		return customerService.loginCustomer(customer);
+	 Customer cust=customerService.loginCustomer(customer);
+	 if(cust!=null)
+		 return new ResponseEntity<Customer>(cust,HttpStatus.ACCEPTED);
+	 else
+		 return new ResponseEntity<Customer>(HttpStatus.FORBIDDEN);
 		
 	}
 	
-	@GetMapping("api/customer/getCustomer")
-	Customer getCustomerById(@PathVariable Integer id) {
+	@GetMapping(LoggersURI.GET_CUSTOMER)
+	ResponseEntity<Customer> getCustomerById(@PathVariable Integer id) {
 		
 		LOGGER.info("*****ID:",id+"*******");
-		return customerService.getCustomerById(id);
-		
+		Customer cust=customerService.getCustomerById(id);
+		LOGGER.info("Customer:"+cust);
+		if(cust!=null)
+			return new ResponseEntity<Customer>(cust,HttpStatus.FOUND);
+		else 
+			return new ResponseEntity<Customer>(HttpStatus.NOT_FOUND);
 	}
 	
-	@GetMapping("api/customer/getAllCustomer")
-	List<Customer> getAllCustomers(){
+	@GetMapping(LoggersURI.GET_ALL_CUSTOMER)
+	ResponseEntity<?> getAllCustomers(){
 		LOGGER.info("******Inside getAllCustomers**********");
-		return customerService.getAllCustomers();
-		
+		List<Customer>customerList=customerService.getAllCustomers();
+		if(!customerList.isEmpty())
+			return new ResponseEntity<Customer>((Customer) customerList,HttpStatus.OK);
+		else
+			return new ResponseEntity<Customer>(HttpStatus.NO_CONTENT);
+				
 	}
 }
